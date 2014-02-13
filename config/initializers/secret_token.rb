@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-FdxDashbouardRails::Application.config.secret_key_base = 'ca64edc72cc599e60478b425ce0bb1568fa086b70b3e02430aa85e404cd49715daff2a1836e9a35c3291f2955fb98a4e533db062dacc95f0cf4e7cd9d2959036'
+DashboardRails::Application.config.secret_key_base = 'ca64edc72cc599e60478b425ce0bb1568fa086b70b3e02430aa85e404cd49715daff2a1836e9a35c3291f2955fb98a4e533db062dacc95f0cf4e7cd9d2959036'

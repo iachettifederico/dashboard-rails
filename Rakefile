@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-FdxDashbouardRails::Application.load_tasks
+DashboardRails::Application.load_tasks

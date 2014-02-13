@@ -1,4 +1,4 @@
-FdxDashbouardRails::Application.routes.draw do
+DashboardRails::Application.routes.draw do
   root to: "welcome#index"
 
   resources "todo"
