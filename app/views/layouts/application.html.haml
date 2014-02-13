@@ -1,0 +1,18 @@
+!!!
+%html
+  %head
+    %title Fdx Dashbouard
+    = javascript_include_tag "application"
+    = stylesheet_link_tag  "application", media: "all"
+    = csrf_meta_tags
+  %body
+    = render partial: 'shared/header'
+    .container-fluid
+      .row-fluid
+        .span9
+          = bootstrap_flash
+          = yield
+        .span3
+          = render partial: 'shared/sidebar'
+      / /row
+    / /container

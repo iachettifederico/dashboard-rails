@@ -1,0 +1,19 @@
+.container-fluid
+  .row-fluid
+    .span4
+      .well.sidebar-nav
+        %ul.nav.nav-list
+          %li.nav-header Summary
+          %li= Pepe.new.date_range
+          %li= link_to "Xoom", "https://www.xoom.com/money-transfer-fees"
+    .span8
+      %table.table
+        %thead
+          %tr
+            %th To String
+            %th Inspect
+        %tbody
+          - [1, 2, 3, 4].each do |i|
+            %tr
+              %td= i.inspect
+              %td= i.to_s
