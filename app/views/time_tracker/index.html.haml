@@ -1,3 +1,21 @@
-.well
-  #tracked-hours{ data: { title: "Tracked Hours", dates: hours.map{|h|h.date}, hours: hours.map{|h|h.hours}, dollars: hours.map{|h|h.dollars}}}
-    - "Placeholder"
+.row-fluid
+  .span4.well
+    - present(summary) do |summary|
+      %h1 Summary
+      %h3 Today
+      %dl
+        %dh Currency Rate
+        %dd= summary.currency_rate
+
+      %dl
+        %dh Total Hours
+        %dd= summary.total_hours
+        %dh Total Dollars
+        %dd= summary.total_dollars
+        %dh Total pesos
+        %dd= summary.total_pesos
+  .span8.well
+    #tracked-hours{ data: { title:   "This Month",
+                            dates:   hours.map{ |h| h.date.strftime("%b-%d") },
+                            hours:   hours.map{ |h| h.hours }}}
+      - "Placeholder"
