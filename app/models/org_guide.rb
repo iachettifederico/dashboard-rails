@@ -1,0 +1,2 @@
+class OrgGuide
+end

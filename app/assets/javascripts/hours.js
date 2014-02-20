@@ -15,7 +15,8 @@ $(function () {
     yAxis: {
       title: {
         text: ""
-      },},
+      },
+    },
     plotOptions: {
       line: {
         dataLabels: {
