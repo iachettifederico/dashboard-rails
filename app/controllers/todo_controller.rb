@@ -1,14 +1,14 @@
 class TodoController < ApplicationController
   def index
     todo = [
-            "Org Mode files guides",
-            "TODO App",
-            "Fulcrum integration (ability to check the current and future stories)",
-            "Ubuntu install",
             "Gems & Tools",
             "Cheatsheets",
-            "Most frequently used documentation pages",
             "Time Converter and/or Link to it",
+            "Most frequently used documentation pages",
+            "Org Mode files guides",
+            "TODO App",
+            "Redmine integration (ability to check the current and future stories)",
+            "Ubuntu install",
             "Useful videos",
             "Hanging Ruby schedule",
             "Emacs documents",
